@@ -1,4 +1,4 @@
-package biblioteca;
+package src.biblioteca;
 
 final class CarteNormala extends Carte{
 

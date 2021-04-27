@@ -1,4 +1,4 @@
-package biblioteca;
+package src.biblioteca;
 
 public class Cont {
     private String parola, username, email, nrTelefon;

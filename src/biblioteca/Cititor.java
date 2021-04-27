@@ -1,4 +1,4 @@
-package biblioteca;
+package src.biblioteca;
 
 public class Cititor {
 
