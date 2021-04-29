@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 import java.util.Date;
 
@@ -14,7 +14,7 @@ public class Abonament {
         this.pretAbonament = pretAbonament;
         this.tipAbonament = tipAbonament;
     }
-
+public Abonament(){}
     public String getTipAbonament() {
         return tipAbonament;
     }

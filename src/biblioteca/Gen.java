@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 public class Gen {
     private String numeGen;

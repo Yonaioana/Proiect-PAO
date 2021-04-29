@@ -1,8 +1,16 @@
-package src.biblioteca;
+package biblioteca;
 
 public class Cont {
     private String parola, username, email, nrTelefon;
     Integer idCititor;
+
+    public Cont(String parola, String username, String email, String nrTelefon, Integer idCititor) {
+        this.parola = parola;
+        this.username = username;
+        this.email = email;
+        this.nrTelefon = nrTelefon;
+        this.idCititor = idCititor;
+    }
 
     public Integer getIdCititor() {
         return idCititor;

@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 public class Carte {
 protected int idCarte;
@@ -98,5 +98,18 @@ protected Integer nrpagCarte, anCarte;
             return this;
         else
             return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Carte{" +
+                "idCarte=" + idCarte +
+                ", numeCarte='" + numeCarte + '\'' +
+                ", edituraCarte='" + edituraCarte + '\'' +
+                ", genCarte='" + genCarte + '\'' +
+                ", autorCarte='" + autorCarte + '\'' +
+                ", nrpagCarte=" + nrpagCarte +
+                ", anCarte=" + anCarte +
+                '}';
     }
 }

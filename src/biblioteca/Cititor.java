@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 public class Cititor {
 
@@ -14,6 +14,8 @@ public class Cititor {
         this.cartiImprumutate = cartiImprumutate;
         this.abonament = abonament;
     }
+
+
 
     public String getNumeCititor() {
         return numeCititor;

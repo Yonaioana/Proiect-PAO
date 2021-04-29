@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 public class Autor {
     private  int idAutor;
@@ -34,5 +34,6 @@ public class Autor {
     public void setIdAutor(int idAutor) {
         this.idAutor = idAutor;
     }
+
 }
 

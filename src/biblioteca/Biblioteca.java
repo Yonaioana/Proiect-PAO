@@ -1,26 +1,54 @@
-package src.biblioteca;
+package biblioteca;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    private List<Cititor> cititori;
-    private List<Carte> carti;
+   
+    private List<Autor>listaAutori=new ArrayList<>();
+    private List<Carte>listaCarti=new ArrayList<>();
+    private List<Cititor>listaCititori=new ArrayList<>();
+    private List<Cont>listaConturi= new ArrayList<>();
+    private static Biblioteca instance;
+
+    private Biblioteca() {}
+    public static Biblioteca getInstance() {
+        if (instance == null) {
+            instance = new Biblioteca();
+        }
+        return instance;
+    }
 
     public List<Carte> getCarti() {
-        return carti;
+        return listaCarti;
+    }
+
+    public List<Autor> getListaAutori() {
+        return listaAutori;
+    }
+
+    public List<Carte> getListaCarti() {
+        return listaCarti;
+    }
+
+    public List<Cititor> getListaCititori() {
+        return listaCititori;
+    }
+
+    public List<Cont> getListaConturi() {
+        return listaConturi;
     }
 
     public List<Cititor> getCititori() {
-        return cititori;
+        return listaCititori;
     }
 
-    public void setCititori(List<Cititor> cititori) {
-        this.cititori = cititori;
+    public void setCititori(List<Cititor> listaCititori) {
+        this.listaCititori = listaCititori;
     }
 
     public void setCarti(List<Carte> carti) {
-        this.carti = carti;
+        this.listaCarti = carti;
     }
 
     public List<Carte> cautareDupaCategorie(String numeGen, List<Carte> carti) {
@@ -66,23 +94,35 @@ public class Biblioteca {
         }
     public List<Cititor> creareCont(int idCititor)
     {
-        this.cititori.remove(idCititor);
-        return cititori;
+        this.listaCititori.remove(idCititor);
+        return listaCititori;
     }
     public List<Cititor> stergereCont(int idCititor)
     {
-        this.cititori.remove(idCititor);
-        return cititori;
+        this.listaCititori.remove(idCititor);
+        return listaCititori;
     }
     public List<Cititor> creareAbonament(int idCititor)
     {
-        this.cititori.remove(idCititor);
-        return cititori;
+        this.listaCititori.remove(idCititor);
+        return listaCititori;
     }
     public List<Cititor> stergereAbonament(int idCititor)
     {
-        this.cititori.remove(idCititor);
-        return cititori;
+        this.listaCititori.remove(idCititor);
+        return listaCititori;
+    }
+    public void addAutor(Autor autor){
+        listaAutori.add(autor);
+    }
+    public void addCarte(Carte carte){
+        listaCarti.add(carte);
+    }
+    public void addCititor(Cititor cititor){
+        listaCititori.add(cititor);
+    }
+    public void addCont(Cont cont){
+        listaConturi.add(cont);
     }
     }
 

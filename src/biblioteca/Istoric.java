@@ -1,4 +1,4 @@
-package src.biblioteca;
+package biblioteca;
 
 import java.util.Date;
 
