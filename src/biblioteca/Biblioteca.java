@@ -92,21 +92,13 @@ public class Biblioteca {
 
             return listaCartiNume;
         }
-    public List<Cititor> creareCont(int idCititor)
-    {
-        this.listaCititori.remove(idCititor);
-        return listaCititori;
-    }
+
     public List<Cititor> stergereCont(int idCititor)
     {
         this.listaCititori.remove(idCititor);
         return listaCititori;
     }
-    public List<Cititor> creareAbonament(int idCititor)
-    {
-        this.listaCititori.remove(idCititor);
-        return listaCititori;
-    }
+
     public List<Cititor> stergereAbonament(int idCititor)
     {
         this.listaCititori.remove(idCititor);

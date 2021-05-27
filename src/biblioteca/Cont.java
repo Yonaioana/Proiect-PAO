@@ -2,7 +2,7 @@ package biblioteca;
 
 public class Cont {
     private String parola, username, email, nrTelefon;
-    Integer idCititor;
+    Integer idCont,idCititor;
 
     public Cont(String parola, String username, String email, String nrTelefon, Integer idCititor) {
         this.parola = parola;
@@ -14,6 +14,14 @@ public class Cont {
 
     public Integer getIdCititor() {
         return idCititor;
+    }
+
+    public Integer getIdCont() {
+        return idCont;
+    }
+
+    public void setIdCont(Integer idCont) {
+        this.idCont = idCont;
     }
 
     public void setIdCititor(Integer idCititor) {
